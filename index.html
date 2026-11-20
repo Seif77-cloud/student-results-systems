@@ -36,5 +36,15 @@
 
 </div>
 <script src="js/main.js"></script>
-</body>
+<script>
+if (!localStorage.getItem('student')) {
+  localStorage.setItem('student', JSON.stringify({
+    name: "سيف خالد",
+    subject1: 85,
+    subject2: 90,
+    subject3: 78,
+    attendance: 95
+  }));
+}
+</script></body>
 </html>
