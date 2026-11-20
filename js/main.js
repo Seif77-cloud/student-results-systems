@@ -1,4 +1,7 @@
-let students = [];
+let students = [
+  { name: "سيف خالد", grades: [85, 90, 78], attendance: 95, avg: 84.33, originalGrades: [85, 90, 78] },
+  { name: "أحمد محمد", grades: [70, 65, 80], attendance: 88, avg: 71.66, originalGrades: [70, 65, 80] }
+];
 
 document.getElementById('addBtn').addEventListener('click', function() {
   let name = document.getElementById('studentName').value.trim();
@@ -77,3 +80,4 @@ document.getElementById('raafaBtn').addEventListener('click', function() {
   html += '</table>';
   report.innerHTML = html;
 });
+showStudents();
