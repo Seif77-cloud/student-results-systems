@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نظام إدارة نتائج الطلاب</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container mt-4">
+<h1 class="text-center mb-4">نظام إدارة نتائج الطلاب - لجنة الرأفة</h1>
+
+<div class="card p-3 mb-3">
+<h3>إضافة طالب جديد</h3>
+<input type="text" id="studentName" class="form-control mb-2" placeholder="اسم الطالب">
+<input type="number" id="grade1" class="form-control mb-2" placeholder="درجة المادة 1">
+<input type="number" id="grade2" class="form-control mb-2" placeholder="درجة المادة 2">
+<input type="number" id="grade3" class="form-control mb-2" placeholder="درجة المادة 3">
+<input type="number" id="attendance" class="form-control mb-2" placeholder="نسبة الحضور %">
+<div id="errorBox" class="alert alert-danger d-none"></div>
+<button id="addBtn" class="btn btn-primary">إضافة طالب</button>
+</div>
+
+<div class="card p-3 mb-3">
+<h3>قائمة الطلاب</h3>
+<div id="studentsListDiv">لم يتم إضافة طلاب بعد.</div>
+</div>
+
+<button id="raafaBtn" class="btn btn-success mb-3">تفعيل لجنة الرأفة</button>
+
+<div class="card p-3">
+<h3>تقرير لجنة الرأفة</h3>
+<div id="reportDiv">اضغط على زر تفعيل لجنة الرأفة لعرض النتائج.</div>
+</div>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
